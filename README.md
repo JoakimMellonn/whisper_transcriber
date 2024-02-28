@@ -3,6 +3,7 @@ You can download this quick and dirty python script to quickly transcribe an aud
 
 ## Prerequisites
 - Python should of course be installed.
+- Ffmpeg also needs to be installed.
 
 Run the following commands, you should be able to copy/paste the entire block:
 
@@ -10,16 +11,16 @@ Run the following commands, you should be able to copy/paste the entire block:
 ```shell
 pip install --upgrade pip
 pip install --upgrade git+https://github.com/huggingface/transformers.git accelerate datasets\[audio\]
-pip install torch
-pip install ffmpeg-python
+pip install --upgrade torch
+pip install --upgrade ffmpeg-python
 ```
 
 **Windows**
 ```shell
 pip install --upgrade pip
 pip install --upgrade git+https://github.com/huggingface/transformers.git accelerate datasets[audio]
-pip install torch
-pip install ffmpeg-python
+pip install --upgrade torch
+pip install --upgrade ffmpeg-python
 ```
 
 ## Usage
