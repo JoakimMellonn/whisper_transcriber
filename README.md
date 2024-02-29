@@ -22,7 +22,7 @@ pip install --upgrade ffmpeg-python
 ```
 
 To install pytorch, make sure to follow the installation guide on the top of this page: https://pytorch.org/get-started/locally/
-If you have CUDA installed it will go much faster (10-20 times faster).
+<br>If you have CUDA installed it will go much faster (10-20 times faster).
 
 ## Usage
 Clone the repository:
