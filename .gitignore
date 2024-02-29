@@ -1,2 +1,8 @@
 input.*
 output.*
+*.json
+*.txt
+*.m4a
+*.wav
+*.mp3
+*.flac

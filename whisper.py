@@ -25,6 +25,10 @@ if inputType not in ["mp3", "flac", "wav"]:
     inputPath = "temp.wav"
 
 # Do the AI magic
+if torch.cuda.is_available():
+    print("CUDA available to accelerate processing")
+else:
+    print("CUDA not available using CPU")
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
@@ -54,15 +58,15 @@ dataset = load_dataset("distil-whisper/librispeech_long", "clean", split="valida
 
 result = pipe(inputPath, return_timestamps=True)
 
-jf = open("output.json", "a")
+jf = open(inputName + ".json", "a")
 jf.write(json.dumps({"result": result["chunks"]}))
 jf.close()
 
-f = open("output.txt", "a")
+f = open(inputName + ".txt", "a")
 f.write(result["text"])
 f.close()
 
 if inputPath == "temp.wav":
     os.remove("temp.wav")
 
-print("DONE! Wrote raw result to output.txt and with timestamps to output.json")
+print("DONE! Wrote raw result to inputname.txt and with timestamps to inputname.json")
