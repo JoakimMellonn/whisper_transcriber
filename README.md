@@ -41,4 +41,4 @@ It will ask for the relative path to the input file, if you've placed the file i
 example_audio.mp3
 ```
 
-Now just wait for the magic to happen. The first time running the script, it will download the model, which can take some time. After that the process can take quite some time depending on the hardware (M1 Pro MacBook Pro took x minutes).
+Now just wait for the magic to happen. The first time running the script, it will download the model, which can take some time. After that the process can take quite some time depending on the hardware (M1 Pro MacBook Pro took 45 minutes before I gave up and a Windows computer with NVIDIA GPU took 30 seconds).
