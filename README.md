@@ -21,8 +21,8 @@ pip install --upgrade git+https://github.com/huggingface/transformers.git accele
 pip install --upgrade ffmpeg-python
 ```
 
-To install pytorch, make sure to follow the installation guide on the top of [this page](https://pytorch.org/get-started/locally/), OBS: if you use CUDA, remember to select it in the "Compute Platform"!
 <br>If you have CUDA installed it will go much faster (10-20 times faster), you can install CUDA [here](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network) if you have an NVIDIA GPU.
+To install pytorch, make sure to follow the installation guide on the top of [this page](https://pytorch.org/get-started/locally/), OBS: if you use CUDA, remember to select it in the "Compute Platform"!
 
 ## Usage
 Clone the repository:
